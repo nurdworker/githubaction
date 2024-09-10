@@ -1,0 +1,11 @@
+name: gogo2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dori-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello dori
+        run: echo "Hello dori"
