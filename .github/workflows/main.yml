@@ -1,1 +1,11 @@
+name: gogo
 
+on:
+  workflow_dispatch:
+
+jobs:
+  muzzi-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello muzzi
+        run: echo "Hello muzzi"
