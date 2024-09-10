@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: say hello dori
         run: echo "Hello dori"
+
+      - name: save secret
+        run: export secret='babo'
+
+      - name: echo secret
+        run: echo $secret
