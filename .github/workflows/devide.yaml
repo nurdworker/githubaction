@@ -1,0 +1,16 @@
+name: process-separation-example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  separated-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Set environment variable
+        run: |
+          export MY_VAR="Hello World"
+          echo "Variable set to $MY_VAR"
+
+      - name: Step 2 - Try to access MY_VAR
+        run: echo "MY_VAR is $MY_VAR"
